@@ -28,7 +28,7 @@ class Usuario extends Conexion
 
     public function guardar()
     {
-        $sql = "INSERT INTO USUARIOS(nombreusuario,pais,telefono,correo,) values  ('$this->NombreUsuario', '$this->pais','$this->telefono','$this->correo')";
+        $sql = "INSERT INTO usuarios (usuario,nombreusuario,pais,telefono,correo) values  ('$this->NombreUsuario', '$this->pais','$this->telefono','$this->correo')";
 
         $resultado = $this->ejecutar($sql);
         return $resultado;

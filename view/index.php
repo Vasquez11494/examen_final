@@ -35,12 +35,12 @@
                         <div class="col">
                             <label for="Pais" class="form-label">Pais de Origen</label>
                             <select name="Pais" id="Pais">
-                                <option value="">Seleccione...</option>
+                                <option>Seleccione...</option>
                             </select>
                         </div>
                         <div class="col">
                             <label for="Telefono" class="form-label">Telefono</label>
-                            <input type="text" placeholder="+502 56781234" class="form-control border border-dark" id="Telefono">
+                            <input type="text"  class="form-control border border-dark" id="Telefono">
                         </div>
                     </div>
                     <div class="row mb-3">
@@ -65,8 +65,9 @@
                         <thead class="table-warning text-center">
                             <tr class="border border-dark">
                                 <th>No.</th>
+                                <th>Usuario</th>
                                 <th>Nombres</th>
-                                <th>Pais de Origen</th>
+                                <th>Pais</th>
                                 <th>Correo</th>
                                 <th>Telefono</th>
                             </tr>

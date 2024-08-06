@@ -142,9 +142,16 @@ const ObtenerUsuarios = async () => {
                     const celda3 = document.createElement('td');
                     const celda4 = document.createElement('td');
                     const celda5 = document.createElement('td');
+                    const celda6 = document.createElement('td');
 
 
                     celda1.innerText = contador;
+                    celda2.innerText = Usuario.usuario;
+                    celda3.innerText = Usuario.nombreusuario;
+                    celda4.innerText = Usuario.pais;
+                    celda5.innerText = Usuario.correo;
+                    celda6.innerText = Usuario.telefono;
+
     
 
                     tr.appendChild(celda1);
@@ -152,6 +159,7 @@ const ObtenerUsuarios = async () => {
                     tr.appendChild(celda3);
                     tr.appendChild(celda4);
                     tr.appendChild(celda5);
+                    tr.appendChild(celda6);
 
                     fragment.appendChild(tr);
                     contador++;
