@@ -1,5 +1,6 @@
 create table usuarios (
     usuario_id SERIAL PRIMARY KEY,
+    usuario VARCHAR(100),
     NombreUsuario VARCHAR(100),
     pais VARCHAR(100),
     telefono VARCHAR(50),

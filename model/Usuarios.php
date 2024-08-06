@@ -3,12 +3,13 @@
 require_once 'Conexion.php';
 
 echo json_encode($_POST);
-exit;
+
 class Usuario extends Conexion
 {
 
     public  $usuario_id;
-    public  $NombreUsuario;
+    public  $usuario;
+    public  $nombreusuario;
     public  $pais;
     public  $telefono;
     public  $correo;
@@ -18,7 +19,8 @@ class Usuario extends Conexion
 
     public function __construct( $args = []){
         $this->usuario_id = $args['usuario_id'] ?? '' ;
-        $this->NombreUsuario = $args['NombreUsuario'] ?? '' ;
+        $this->usuario = $args['usuario'] ?? '' ;
+        $this->nombreusuario = $args['nombreUsuario'] ?? '' ;
         $this->pais = $args['pais'] ?? '' ;
         $this->telefono = $args['telefono'] ?? '' ;
         $this->correo = $args['correo'] ?? '' ;
@@ -28,7 +30,7 @@ class Usuario extends Conexion
 
     public function guardar()
     {
-        $sql = "INSERT INTO usuarios (usuario,nombreusuario,pais,telefono,correo) values  ('$this->NombreUsuario', '$this->pais','$this->telefono','$this->correo')";
+        $sql = "INSERT INTO usuarios (usuario,nombreusuario,pais,telefono,correo) values  ('$this->usuario','$this->nombreusuario', '$this->pais','$this->telefono','$this->correo')";
 
         $resultado = $this->ejecutar($sql);
         return $resultado;

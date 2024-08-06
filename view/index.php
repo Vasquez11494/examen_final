@@ -24,29 +24,29 @@
                     <div class="row mb-3">
                         <div class="col">
                             <label for="Usuario" class="form-label">Ingrese el Usuario de Github</label>
-                            <input type="text" class="form-control border border-dark" id="Usuario">
+                            <input type="text"  name="usuario" class="form-control border border-dark" id="Usuario">
                         </div>
                         <div class="col">
                             <label for="NombreUsuario" class="form-label">Nombre del Usuario</label>
-                            <input type="text" class="form-control border border-dark" id="NombreUsario" readonly>
+                            <input type="text" name="nombreUsuario" class="form-control border border-dark" id="NombreUsario" readonly>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col">
-                            <label for="Pais" class="form-label">Pais de Origen</label>
-                            <select name="Pais" id="Pais">
+                            <label for="pais" class="form-label">Pais de Origen</label>
+                            <select name="pais" id="Pais">
                                 <option>Seleccione...</option>
                             </select>
                         </div>
                         <div class="col">
-                            <label for="Telefono" class="form-label">Telefono</label>
-                            <input type="text"  class="form-control border border-dark" id="Telefono">
+                            <label for="telefono" class="form-label">Telefono</label>
+                            <input type="text" name="Telefono"  class="form-control border border-dark" id="Telefono">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-7">
                             <label for="Correo" class="form-label">correo electronico</label>
-                            <input type="email" class="form-control border border-dark" id="Correo">
+                            <input type="email" name="correo" class="form-control border border-dark" id="Correo">
                         </div>
                     </div>
                     <div class="row mb-3 justify-content-center text-center">
@@ -74,7 +74,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td colspan="4" class="text-center">No hay Usuarios Ingresados</td>
+                                <td colspan="6" class="text-center">No hay Usuarios Ingresados</td>
                             </tr>
                         </tbody>
                     </table>

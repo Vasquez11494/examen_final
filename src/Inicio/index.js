@@ -82,6 +82,7 @@ const GuardarUsuarios = async (e) => {
     try {
         const respuesta = await fetch(url, config);
         const data = await respuesta.json();
+        console.log(data);
 
         const { mensaje, codigo, detalle } = data
 
@@ -127,6 +128,7 @@ const ObtenerUsuarios = async () => {
     try {
         const respuesta = await fetch(url, config);
         const data = await respuesta.json();
+        
         console.log(data);
 
         MostrarResultados.tBodies[0].innerHTML = '';
@@ -170,7 +172,7 @@ const ObtenerUsuarios = async () => {
                 const td = document.createElement('td');
                 td.innerText = 'No existen Usuario ';
                 tr.classList.add('text-center');
-                td.colSpan = 5;
+                td.colSpan = 6;
 
                 tr.appendChild(td);
                 fragment.appendChild(tr);
